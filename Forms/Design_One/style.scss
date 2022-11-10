@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'Google Prodduct Sans';
+    src: url(assets/fonts/ProductSansRegular.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+
+
+@import '__mixin.scss';
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Google Prodduct Sans';
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: purple;
+
+    &::selection{
+        color: white;
+        background: purple;
+    }
+}
+
+.container{
+    width: 100vw;
+    min-height: 100vh;
+    background: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   
+
+    .form{
+        min-width: 40vw;
+        min-height: 80vh;
+        background: plum;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        .form_item{
+            width: 100%;
+            height: auto;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+
+            label{
+                text-transform: capitalize;
+                font-size: 1.5rem;
+
+                &::selection{
+                    background: purple;
+                    color: whitesmoke;
+                }
+            }
+
+            input{
+                margin: 1rem 0px;
+                font-size: 2vmin;
+                outline: none;
+                border: none;
+                line-height: 2.5rem;
+                padding: 0px 10px;
+                border-radius: 5px;
+                font-weight: 400;
+                color: purple;
+            }
+            span{
+                padding-left: 1em;
+            }
+            
+        }
+        .form_button{
+            width: 100%;
+            min-height: 8rem;
+            padding: 1rem;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+
+                .sign_up{
+                    margin-right: 15px;
+                    font-size: 1.2rem;
+                    padding: 1rem 2.5rem;
+                    border: none;
+                    border-radius: 2.5rem;
+                    cursor: pointer;
+                }
+
+                .log_in{
+                    margin-right: 15px;
+                    font-size: 1.2rem;
+                    padding: 1rem 2.5rem;
+                    border: none;
+                    border-radius: 2.5rem;
+                    cursor: pointer;
+                    @include bottonColor(purple);
+                    color: whitesmoke;
+                }
+        }
+
+
+        
+    }
+}
+

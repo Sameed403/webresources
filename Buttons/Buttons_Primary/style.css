@@ -1,0 +1,91 @@
+@font-face {
+  font-family: 'Product Sans';
+  src: url("ProductSans-BoldItalic.eot");
+  src: url("ProductSans-BoldItalic.eot?#iefix") format("embedded-opentype"), url("ProductSans-BoldItalic.woff2") format("woff2"), url("ProductSans-BoldItalic.woff") format("woff"), url("ProductSans-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap; }
+@font-face {
+  font-family: 'Product Sans';
+  src: url("ProductSans-Italic.eot");
+  src: url("ProductSans-Italic.eot?#iefix") format("embedded-opentype"), url("ProductSans-Italic.woff2") format("woff2"), url("ProductSans-Italic.woff") format("woff"), url("ProductSans-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap; }
+@font-face {
+  font-family: 'Product Sans';
+  src: url("ProductSans-Regular.eot");
+  src: url("ProductSans-Regular.eot?#iefix") format("embedded-opentype"), url("ProductSans-Regular.woff2") format("woff2"), url("ProductSans-Regular.woff") format("woff"), url("ProductSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'Product Sans';
+  src: url("ProductSans-Bold.eot");
+  src: url("ProductSans-Bold.eot?#iefix") format("embedded-opentype"), url("ProductSans-Bold.woff2") format("woff2"), url("ProductSans-Bold.woff") format("woff"), url("ProductSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Product Sans'; }
+
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: purple;
+  display: grid;
+  place-items: center; }
+  .container .inner_container {
+    min-width: 75%;
+    min-height: 75%;
+    background: plum;
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px; }
+    .container .inner_container .items {
+      display: grid;
+      place-items: center; }
+      .container .inner_container .items button {
+        font-size: 1em;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+        cursor: pointer; }
+    .container .inner_container .item1 button {
+      padding: 1rem 2.5rem;
+      border-radius: 50px;
+      border: none;
+      font-size: 1em;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+      cursor: pointer; }
+    .container .inner_container .item2 button {
+      padding: 1rem 2.5rem;
+      border-radius: 50px;
+      font-size: 1em;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+      cursor: pointer;
+      background: transparent;
+      border: 2px solid whitesmoke;
+      color: whitesmoke; }
+    .container .inner_container .item6 button {
+      padding: 1rem 2.5rem;
+      border-radius: 5px;
+      border: none;
+      font-size: 1em;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+      cursor: pointer; }
+    .container .inner_container .item7 button {
+      padding: 1rem 2.5rem;
+      border-radius: 5px;
+      border: 2px solid whitesmoke;
+      background: transparent;
+      font-size: 1em;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+      cursor: pointer;
+      color: whitesmoke;
+      text-transform: uppercase; }
+
+/*# sourceMappingURL=style.css.map */
